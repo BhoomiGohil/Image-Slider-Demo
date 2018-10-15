@@ -1,0 +1,83 @@
+body{
+  margin:0px;
+  padding:0px;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+.image{
+    float:left;
+    width:100%;
+    height:100%;
+}
+
+.main{
+    width:80%;
+    height:650px;
+    margin: auto;
+    margin-top: 30px;
+    background-color: rgb(235, 239, 241);
+}
+
+#division{
+    float:left;
+    width: 23.7%;
+    height: 200px;
+    padding: 5px;
+    margin: 8px;
+    border:3px solid rgb(52, 72, 90);
+}
+
+.button-div
+{
+  width: 80%;
+  height: 50px;
+  margin: auto;
+  background-color: #8eb8da;
+  display: flex;
+  justify-content: center;
+}
+
+.button{
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  background-color: #ebeff1;
+  color: #34485a;
+  font-size: 15px;
+  font-weight: bold;
+  border: 2px solid #34485a;
+  border-radius: 20px;
+}
+
+.glassScreen{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #688faf;
+  opacity: 0.5;
+  display:none;
+}
+
+#bigimage
+{
+  border-radius: 35px;
+}
+
+.display{
+  width: 80%;
+  height: 650px;
+  margin: auto;
+  border: 3px solid rgb(52, 72, 90);
+  padding: 5px;
+  position: absolute;
+  top: 4%;
+  left: 10%;
+  background-color: white;
+  border-radius: 40px;
+  display:none;
+}
