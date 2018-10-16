@@ -54,6 +54,14 @@ function numberButtonClick(text) {
     displaySmallImage(start, end); // Display small images.
 }
 
+for (i = 0; i <= repeation; i++) { // It is for display below number buttons to view number of images.
+    var button = document.createElement("button");
+    button.innerHTML = i + 1;
+    button.className = "button";
+    button.onclick = function () { numberButtonClick(this.innerHTML); }
+    document.querySelector(".button-div").appendChild(button);
+}
+
 function imageclick(value) { // Click on small image to display particular image in big way.
     clearbigimage(display);
 
@@ -68,14 +76,6 @@ function imageclick(value) { // Click on small image to display particular image
     displayimg.setAttribute("class", "image");
     displayimg.setAttribute("id", "bigimage");
     document.querySelector(".display").appendChild(displayimg);
-}
-
-for (i = 0; i <= repeation; i++) { // It is for display below number buttons to view number of images.
-    var button = document.createElement("button");
-    button.innerHTML = i + 1;
-    button.className = "button";
-    button.onclick = function () { numberButtonClick(this.innerHTML); }
-    document.querySelector(".button-div").appendChild(button);
 }
 
 function arrow(value)
@@ -113,7 +113,6 @@ function arrow(value)
     bigimage.value = bigimage.value + 1;
     console.log(bigimage.value);
   }
-
 }
 
 function hide() { // Hide big large box.
