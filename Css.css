@@ -15,7 +15,7 @@ body{
 
 .main{
     width:80%;
-    height:650px;
+    min-height:650px;
     margin: auto;
     margin-top: 30px;
     background-color: rgb(235, 239, 241);
@@ -58,8 +58,8 @@ body{
   position: absolute;
   top: 0px;
   left: 0px;
-  background-color: #688faf;
-  opacity: 0.5;
+  background-image: linear-gradient(#011423 , #bfc9d2);
+  opacity: 0.9;
   display:none;
 }
 
@@ -80,4 +80,37 @@ body{
   background-color: white;
   border-radius: 40px;
   display:none;
+}
+
+.display-button{
+  width: 80%;
+  height: 50px;
+  position: absolute;
+  top: 89.7%;
+  left: 10%;
+  display:none;
+}
+
+.glassbutton{
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  background-color: #ebeff1;
+  border: 2px solid #34485a;
+  border-radius: 10px;
+}
+
+.display-flex{
+  display: flex;
+  justify-content: center;
+}
+
+#buttonleft{
+  background-image: url("LeftArrow.png");
+  background-size: 100% 100%;
+}
+
+#buttonright{
+  background-image: url("RightArrow.png");
+  background-size: 100% 100%;
 }
