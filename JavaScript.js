@@ -102,7 +102,7 @@ function arrow(value)
     {
       bigimage.value = start;
     }
-    imageloop(bigimage.value);    
+    imageloop(bigimage.value);
   }
 }
 
@@ -112,7 +112,6 @@ function imageloop(value)
   {
     if(value === i)
     {
-      console.log(value,i,dbimg[i - 1].src);
       bigimage.src = dbimg[i - 1].src;
     }
   }
