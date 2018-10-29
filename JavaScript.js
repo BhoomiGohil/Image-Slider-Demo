@@ -32,9 +32,8 @@ function displaySmallImage(start, end) {  // Display small images on webpage.
 
         var img = document.createElement("img");
         img.value = i;
-        if(img.value === i)
-        {
-          img.src = dbimg[i - 1].src;
+        if (img.value === i) {
+            img.src = dbimg[i - 1].src;
         }
         img.setAttribute("class", "image");
         img.onclick = function () { imageclick(this.value) };
@@ -84,37 +83,30 @@ function imageclick(value) { // Click on small image to display particular image
     document.querySelector(".display").appendChild(displayimg);
 }
 
-function arrow(value)
-{
-  var bigimage = document.querySelector("#bigimage"); // To slide images
-  if(value === "left")
-  {
-    bigimage.value = bigimage.value - 1;
-    if(bigimage.value === 0)
-    {
-      bigimage.value = pic;
+function arrow(value) {
+    var bigimage = document.querySelector("#bigimage"); // To slide images
+    if (value === "left") {
+        bigimage.value = bigimage.value - 1;
+        if (bigimage.value === 0) {
+            bigimage.value = pic;
+        }
+        imageloop(bigimage.value);
     }
-    imageloop(bigimage.value);
-  }
-  else {
-    bigimage.value = bigimage.value + 1;
-    if(bigimage.value === pic + 1)
-    {
-      bigimage.value = start;
+    else {
+        bigimage.value = bigimage.value + 1;
+        if (bigimage.value === pic + 1) {
+            bigimage.value = start;
+        }
+        imageloop(bigimage.value);
     }
-    imageloop(bigimage.value);
-  }
 }
 
-function imageloop(value)
-{
-  for(i = start ; i <= pic ; i++)
-  {
-    if(value === i)
-    {
-      bigimage.src = dbimg[i - 1].src;
+function imageloop(value) {
+    for (i = start; i <= pic; i++) {
+        if (value === i) {
+            bigimage.src = dbimg[i - 1].src;
+        }
     }
-  }
 }
 
 function hide() { // Hide big large box.
