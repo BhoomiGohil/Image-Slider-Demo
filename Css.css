@@ -1,41 +1,116 @@
-html{
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
   box-sizing: border-box;
 }
 
-* , *::after , *::before{
-    box-sizing:inherit;
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
 }
 
-body{
-  margin:0px;
+.image {
+  width: 100%;
+  height: 100%;
 }
 
-.image{
-    float:left;
-    width:100%;
-    height:100%;
+.main {
+  width: 100%;
+  height: 100%;
+  padding: 0px 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  position: relative;
 }
 
-.main{
-    width:1280px;
-    min-height:650px;
-    margin: auto;
-    margin-top: 10px;
-    background-color: rgb(235, 239, 241);
+.imageContainer {
+  width: 100%;
+  margin: 0px auto;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  background-color: rgb(235, 239, 241);
 }
 
-#division{
-    float:left;
-    width: 23.7%;
-    height: 200px;
-    padding: 5px;
-    margin: 8px;
-    border:3px solid rgb(52, 72, 90);
+#division {
+  width: 100%;
+  height: 200px;
+  padding: 5px;
+  border: 3px solid rgb(52, 72, 90);
 }
 
-.button-div
-{
-  width: 1280px;
+.glassScreen {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-image: linear-gradient(#011423, #bfc9d2);
+  opacity: 0.9;
+  display: none;
+}
+
+#bigimage {
+  border-radius: 35px;
+}
+
+.display {
+  width: 90%;
+  height: 85%;
+  border: 3px solid rgb(52, 72, 90);
+  padding: 5px;
+  position: absolute;
+  top: 10px;
+  background-color: white;
+  border-radius: 40px;
+  display: none;
+}
+
+.display-button {
+  width: 90%;
+  height: 50px;
+  position: absolute;
+  top: 88%;
+  display: none;
+}
+
+.display-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.glassbutton {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  background-color: #ebeff1;
+  border: 2px solid #34485a;
+  border-radius: 10px;
+}
+
+#buttonleft {
+  background-image: url("LeftArrow.png");
+  background-size: 100% 100%;
+}
+
+#buttonright {
+  background-image: url("RightArrow.png");
+  background-size: 100% 100%;
+}
+
+.buttonContainer {
+  width: 100%;
+}
+
+.button-div {
+  width: 100%;
   height: 50px;
   margin: auto;
   background-color: #8eb8da;
@@ -43,7 +118,7 @@ body{
   justify-content: center;
 }
 
-.button{
+.button {
   width: 40px;
   height: 40px;
   margin: 5px;
@@ -55,80 +130,16 @@ body{
   border-radius: 20px;
 }
 
-.glassScreen{
+.database {
   width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  background-image: linear-gradient(#011423 , #bfc9d2);
-  opacity: 0.9;
-  display:none;
-}
-
-#bigimage
-{
-  border-radius: 35px;
-}
-
-.display{
-  width: 1280px;
-  height: 650px;
-  margin: auto;
-  border: 3px solid rgb(52, 72, 90);
-  padding: 5px;
-  position: absolute;
-  top: 10px;
-  left: 10%;
-  background-color: white;
-  border-radius: 40px;
-  display:none;
-}
-
-.display-button{
-  width: 1280px;
-  height: 50px;
-  position: absolute;
-  top: 660px;
-  left: 10%;
-  display:none;
-}
-
-.glassbutton{
-  width: 40px;
   height: 40px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.dbimg {
+  width: 30px;
+  height: 30px;
   margin: 5px;
-  background-color: #ebeff1;
-  border: 2px solid #34485a;
-  border-radius: 10px;
-}
-
-.display-flex{
-  display: flex;
-  justify-content: center;
-}
-
-#buttonleft{
-  background-image: url("LeftArrow.png");
-  background-size: 100% 100%;
-}
-
-#buttonright{
-  background-image: url("RightArrow.png");
-  background-size: 100% 100%;
-}
-
-.database
-{
-  width: 1280px;
-  height: 40px;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-}
-
-.dbimg{
-  width:30px;
-  height:30px;
-  margin:5px;
 }
