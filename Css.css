@@ -15,6 +15,7 @@ body {
 .image {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .main {
@@ -39,11 +40,27 @@ body {
   background-color: rgb(235, 239, 241);
 }
 
-#division {
+.smallImageEl {
   width: 100%;
   height: 200px;
   padding: 5px;
   border: 3px solid rgb(52, 72, 90);
+}
+
+.screen-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
+  padding: 10px;
+  display: none;
 }
 
 .glassScreen {
@@ -54,11 +71,15 @@ body {
   left: 0px;
   background-image: linear-gradient(#011423, #bfc9d2);
   opacity: 0.9;
-  display: none;
+  z-index: 0;
 }
 
 #bigimage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 35px;
+  object-fit: cover;
 }
 
 .display {
@@ -66,30 +87,25 @@ body {
   height: 85%;
   border: 3px solid rgb(52, 72, 90);
   padding: 5px;
-  position: absolute;
-  top: 10px;
   background-color: white;
   border-radius: 40px;
-  display: none;
+  z-index: 1;
 }
 
 .display-button {
-  width: 90%;
-  height: 50px;
-  position: absolute;
-  top: 88%;
-  display: none;
+  display: flex;
+  z-index: 1;
 }
 
 .display-flex {
   display: flex;
   justify-content: center;
+  gap: 5px;
 }
 
 .glassbutton {
   width: 40px;
   height: 40px;
-  margin: 5px;
   background-color: #ebeff1;
   border: 2px solid #34485a;
   border-radius: 10px;
